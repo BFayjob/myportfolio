@@ -1,20 +1,30 @@
 export default function Hero() {
   return (
-    <section className="bg-gray-900 text-white h-screen flex items-center justify-center">
-      <div className="text-center">
-        <h1 className="text-5xl font-bold mb-4">
-          Hello, My name is Boluwatife Fayjob
-        </h1>
-        <p className="text-xl mb-8">
-          Aspiring Cloud Security Engineer | Cybersecurity Professional |
-          Front-end Developer |
-        </p>
-        <a
-          href="#projects"
-          className="bg-teal-500 px-6 py-3 rounded-full text-white hover:bg-teal-400"
-        >
-          View My Work
-        </a>
+    <section
+      id="hero"
+      className="relative h-[70vh] flex items-center bg-gray-800 text-white"
+    >
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{ backgroundImage: "url('/images/secret-agent-bg.jpg')" }}
+      ></div>
+      <div className="relative z-10 container mx-auto flex items-center">
+        <div className="w-1/2">
+          <img
+            src="/images/profile-pic-half.png"
+            alt="Boluwatife Fayjob"
+            className="rounded-l-lg h-full w-full object-cover"
+          />
+        </div>
+        <div className="w-1/2 p-8">
+          <h1 className="text-3xl md:text-4xl font-bold mb-4">
+            Hi, my name is Boluwatife Fayjob.
+          </h1>
+          <p className="text-md md:text-lg">
+            I am a security analyst with a passion for cloud security and
+            software engineering.
+          </p>
+        </div>
       </div>
     </section>
   );
